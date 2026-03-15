@@ -197,4 +197,6 @@ WHERE Incomplete_Rides = 'Yes';
         ["Booking_ID", "Incomplete_Rides_Reason"]
     ]
 
+    st.write("Total Incomplete Rides:", result.shape[0])
+
     st.dataframe(result)
