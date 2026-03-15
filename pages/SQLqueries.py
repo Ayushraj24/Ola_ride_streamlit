@@ -4,7 +4,7 @@ import pandas as pd
 st.title("SQL Query Analysis")
 
 # Load data
-df = pd.read_csv("/Users/ayushraj/Projects/Analysis/OLA ride/Data/ola_rides_cleaned.csv")
+df = pd.read_csv("ola_rides_cleaned.csv")
 
 # Tabs
 tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10 = st.tabs([
