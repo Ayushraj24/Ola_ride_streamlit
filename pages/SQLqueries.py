@@ -190,10 +190,10 @@ with tab10:
     st.code("""
 SELECT Booking_ID, Incomplete_Rides_Reason
 FROM ola_rides
-WHERE Incomplete_Rides = 1;
+WHERE Incomplete_Rides = 'Yes';
 """, language="sql")
 
-    result = df[df["Incomplete_Rides"] == 1][
+    result = df[df["Incomplete_Rides"] == "Yes"][
         ["Booking_ID", "Incomplete_Rides_Reason"]
     ]
 
